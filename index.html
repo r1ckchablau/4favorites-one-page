@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4Favorites é uma plataforma onde você pode compartilhar seus interesses favoritos e descobrir novas paixões.">
+    <meta name="keywords" content="favoritos, filmes, música, hobbies, perfil, 4Favorites">
+    <meta name="author" content="Hênrick (rickinhochablau)">
+    <meta property="og:title" content="4Favorites - Compartilhe seus Favoritos">
+    <meta property="og:description" content="Descubra e compartilhe seus interesses favoritos com amigos no 4Favorites.">
+    <meta property="og:image" content="https://example.com/img/4favorites-logo.png">
+    <meta property="og:url" content="https://github.com/r1ckchablau/4favorites-one-page-.git">
+    <title>4Favorites</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="./img/4favorites-logo.png" alt="Logo 4Favorites" class="img-fluid">
+                <h1 class="text-white ms-3">4FAVORITES
+                    <p class="text-white">Nós gostamos do seu gosto</p>
+                </h1>
+            </div>
+            <nav class="header">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#trabrick" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#filmes" class="nav-link text-white">Filmes</a></li>
+                    <li class="nav-item"><a href="#cadastro" class="nav-link text-white">Cadastro</a></li>
+                    <input type="text" placeholder="Pesquisar..." class="form-control">
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="trabrick" class="mt-5">
+            <h1 class="titulom text-center"><u>Exiba o seu gosto!</u></h1>
+            <section class="cards">
+                <div class="card1">
+                    <p>• Defina seus 4 favoritos de cada categoria disponível.
+                        <br>• Crie suas próprias categorias!
+                        <br>• Perfil completamente customizável.
+                        <br>• Descubra o gosto de seus amigos e faça novos amigos.
+                    </p>
+                </div>
+                <div class="card2">
+                    <p>Card de favoritos: adicione uma imagem, adicione um texto e escolha uma cor</p>
+                </div>
+                <div class="comece">
+                    <li><a href="#cadastro">Comece agora!</a></li>
+                </div>
+            </section>
+        </section>
+
+        <section id="filmes" class="mt-5">
+            <h2 class="text-center text-white">Filmes</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <div class="col">
+                        <div class="card h-100" style="background-color: #A52A2A;">
+                            <img src="./img/batman.webp" class="card-img-top" alt="The Batman" data-bs-toggle="modal" data-bs-target="#modalBatman">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">The Batman</h5>
+                                <p class="card-text text-white">Ano: 2022<br>Diretor: Matt Reeves</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalBatman" tabindex="-1" aria-labelledby="modalBatmanLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalBatmanLabel">The Batman (2022)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/batman.webp" class="img-fluid" alt="The Batman">
+                                    <p class="mt-3">Diretor: Matt Reeves</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100" style="background-color: #FFC300;">
+                            <img src="./img/mr-fox.webp" class="card-img-top" alt="Fantastic Mr. Fox" data-bs-toggle="modal" data-bs-target="#modalFox">
+                            <div class="card-body">
+                                <h5 class="card-title">Fantastic Mr. Fox</h5>
+                                <p class="card-text">Ano: 2009<br>Diretor: Wes Anderson</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalFox" tabindex="-1" aria-labelledby="modalFoxLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFoxLabel">Fantastic Mr. Fox (2009)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/mr-fox.webp" class="img-fluid" alt="Fantastic Mr. Fox">
+                                    <p class="mt-3">Diretor: Wes Anderson</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100" style="background-color: #1E90FF;">
+                            <img src="./img/punch-drunk-love.webp" class="card-img-top" alt="Punch-Drunk Love" data-bs-toggle="modal" data-bs-target="#modalPunch">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Punch-Drunk Love</h5>
+                                <p class="card-text text-white">Ano: 2002<br>Diretor: Paul T. Anderson</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalPunch" tabindex="-1" aria-labelledby="modalPunchLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalPunchLabel">Punch-Drunk Love (2002)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/punch-drunk-love.webp" class="img-fluid" alt="Punch-Drunk Love">
+                                    <p class="mt-3">Diretor: Paul T. Anderson</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100" style="background-color: #bc523a;">
+                            <img src="./img/harry-met-sally.webp" class="card-img-top" alt="When Harry Met Sally" data-bs-toggle="modal" data-bs-target="#modalHarry">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">When Harry Met Sally</h5>
+                                <p class="card-text text-white">Ano: 1989<br>Diretor: Rob Reiner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalHarry" tabindex="-1" aria-labelledby="modalHarryLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalHarryLabel">When Harry Met Sally (1989)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/harry-met-sally.webp" class="img-fluid" alt="When Harry Met Sally">
+                                    <p class="mt-3">Diretor: Rob Reiner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Cadastro -->
+        <section id="cadastro" class="mt-5">
+            <div class="container d-flex flex-column align-items-center">
+                <div class="card mb-4 p-4" style="max-width: 600px;">
+                    <figure class="text-center">
+                        <img src="./img/user-profile-icon.png" alt="Foto de perfil do usuário" class="profile-icon">
+                    </figure>
+                    <button class="google-btn btn btn-primary btn-block w-100 mb-3">Continuar com Google</button>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sobrenome" class="form-label">Sobrenome:</label>
+                            <input type="text" id="sobrenome" name="sobrenome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Sua senha:</label>
+                            <input type="password" id="senha" name="senha" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmar-senha" class="form-label">Confirme sua senha:</label>
+                            <input type="password" id="confirmar-senha" name="confirmar-senha" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entre</button>
+                    </form>
+                </div>
+                <div class="card p-4" style="max-width: 600px;">
+                    <h2>Sobre o site:</h2>
+                    <p>Em um vasto mar de informações online, encontrar um lugar para genuinamente conectar-se com outros pode ser desafiador. Mas imagine um espaço virtual onde você pode compartilhar suas paixões mais profundas, seus interesses mais intensos, e descobrir outros que compartilham desses mesmos sentimentos. Bem-vindo ao 4Favorites - uma plataforma criada de fã para fã, com a intenção de oferecer um ambiente acolhedor para amigos compartilharem seus gostos.</p>
+                    <h3>O que é o 4Favorites?</h3>
+                    <p>O 4Favorites vai além de ser apenas mais um site na internet. É uma comunidade de entusiastas apaixonados por uma variedade de tópicos, desde filmes e música até jogos e hobbies. No cerne, o site é uma plataforma de perfil, onde os usuários podem criar uma conta e compartilhar seus quatro favoritos em diferentes categorias.</p>
+                    <h3>Como Funciona?</h3>
+                    <p>O processo é simples e direto. Depois de se cadastrar, você terá a oportunidade de criar um perfil único, expressando sua personalidade através dos seus favoritos. Imagine ter a chance de exibir ao mundo seus filmes favoritos, livros que marcaram sua vida, músicas que embalaram suas histórias e jogos que cativaram sua imaginação. E o melhor? Você não está sozinho nessa jornada. Compartilhar seus favoritos é apenas o começo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5">
+        <div class="footer ">
+            <div class="contato mb-3">
+                <p>Entre em contato conosco:</p>
+                <p>4favorites@gmail.com</p>
+            </div>
+            <div class="social">
+                <p>Nossas redes:</p>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#"><img src="./img/insta-logo.png" alt="Instagram" class="img-fluid" style="width: 30px;"></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#"><img src="./img/twitter-logo.png" alt="Twitter" class="img-fluid" style="width: 30px;"></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#"><img src="./img/youtube-logo.png" alt="YouTube" class="img-fluid" style="width: 30px;"></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#"><img src="./img/tiktok-logo.png" alt="Tiktok" class="img-fluid" style="width: 30px;"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
